@@ -1,4 +1,5 @@
 ﻿using System;
+using efcore.Models;
 
 namespace efcore
 {
@@ -8,11 +9,12 @@ namespace efcore
         {
             using (var db = new AppDBContext())
             {
+                /*
                 Student student1 = new Student { StudentId = 1000, Name = "Hey name" };
                 db.Students.Add(student1);
                 var count = db.SaveChanges();
                 Console.WriteLine("{0} records saved to database", count);
-                
+                */
                 Console.WriteLine();
                 Console.WriteLine("All students in database:");
                 foreach (var student in db.Students)
